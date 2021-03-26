@@ -1,0 +1,250 @@
+:root {
+    --color-border-text: #596275;
+}
+
+body, h1, h2, p, ul, li {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header {
+    background-color: #63cdda8f;
+    padding-top: 4%;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #FFF;
+    border: 5px solid #3dc1d3;
+    border-radius: 30px 30px 0 0;
+    border-bottom: none;
+    padding: 2% 0 0 0;
+    position: relative;
+}
+
+label {
+    background-color: #1c1c22;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50px;
+    right: 0;
+    top: 0;
+    margin: 2%;
+    display: block;
+}
+
+label span {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    background-color: #d2bb8d;
+    border-radius: 100px;
+    margin: 7%;
+}
+
+input:checked ~ .dark-mode label span {
+    float: right;
+    background-color: #FFF;
+}
+
+input:checked ~ .dark-mode label {
+    background-color: #3dc1d3;
+}
+
+input:checked ~ .dark-mode,
+input:checked ~ .dark-mode header,
+input:checked ~ .dark-mode main,
+input:checked ~ .dark-mode footer,
+input:checked ~ .dark-mode p,
+input:checked ~ .dark-mode ul,
+input:checked ~ .dark-mode div,
+input:checked ~ .dark-mode div div,
+input:checked ~ .dark-mode div section {
+    background-color: #1c1c22;
+    color: #FFF;
+    border-color: #d2bb8d;
+}
+
+input:checked ~ .dark-mode header .content .block-image figure img.photo {
+    display: none;
+}
+
+input:checked ~ .dark-mode header .content .block-image figure img.photo-dark-mode {
+    display: block;
+    border: 5px solid #d2bb8d;
+}
+
+main .content {
+    border-top: none;
+    display: block;
+    border-radius: 0 0 30px 30px;
+    border-bottom: 5px solid #3dc1d3;
+    padding-bottom: 5%;
+}
+
+figure img:not(footer .block-footer div figure img) {
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid #3dc1d3;
+}
+
+.block-image {
+    width: 35%;
+    margin-left: 5%;
+}
+
+.block-info {
+    width: 60%;
+    margin: 2% 4%;
+}
+
+.block-info .name-profile {
+    margin-bottom: 5%;
+}
+
+.block-info h1 {
+    font-size: 30px;
+}
+
+.block-info p, main .content p, footer .block-footer p {
+    font-size: 15px;
+    color: var(--color-border-text);
+}
+
+.block-info p {
+    font-style: italic;
+}
+
+.block-info .additional-profile h1, main .content h1 {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+main .content div {
+    margin: 0 5%;
+    padding: 4% 5% 0 5%;
+}
+
+main .content div:first-child {
+    border-top: 1px solid var(--color-border-text);
+}
+
+main .content div p {
+    padding: 0 4% 4% 4%;
+    border-bottom: 1px solid var(--color-border-text);
+}
+
+main .content div .exp-profile {
+    display: flex;
+    font-size: 18px;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--color-border-text);
+}
+
+section.exp-profile ul {
+    width: 45%;
+    padding-left: 2%;
+    border-right: 1px solid var(--color-border-text);
+    border-bottom: 1px solid var(--color-border-text);
+    margin: 0 2% 2% 0;
+}
+
+ul.block-info-exp li p {
+    border-bottom: none;
+    padding: 0;
+}
+
+ul.block-info-exp li {
+    padding-bottom: 4%;
+}
+
+ul.block-info-exp li:last-child {
+    align-items: end;
+}
+
+section.exp-profile ul:last-child {
+    border: none;
+}
+
+.block-info-contact img, .block-info-exp img  {
+    width: 25px;
+    padding-right: 2%;
+}
+
+.block-info-contact li, .block-info-exp li {
+    align-items: center;
+    display: flex;
+    line-height: 30px;
+}
+
+ul.block-abilities {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+ul.block-abilities li {
+    padding: 0 7%;
+    text-align: center;
+    width: 10%;
+    transition: width 0.5s;
+}
+
+ul.block-abilities li:hover {
+    width: 14%;
+    transition: 0.5s;
+}
+
+ul.block-abilities img {
+    width: 100%;
+}
+
+ul.block-abilities li p {
+    border-bottom: 0;
+}
+
+ul.block-abilities li a, footer .block-footer div a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    padding: 2% 0;
+    background-color: #f7d794a3;
+}
+
+footer div.block-footer {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+footer div.block-footer {
+    width: 60%;
+}
+
+footer .block-footer div figure img{
+    width: 80%;
+    transition: width 0.5s; 
+}
+
+footer .block-footer div figure img:hover {
+    width: 100%;
+}
+
+footer div.block-footer div {
+    width: 20%;
+    margin: 0 auto;
+}
