@@ -193,11 +193,6 @@ ul.block-abilities li {
     transition: width 0.5s;
 }
 
-ul.block-abilities li:hover {
-    width: 14%;
-    transition: 0.5s;
-}
-
 ul.block-abilities img {
     width: 100%;
 }
@@ -233,10 +228,6 @@ footer div.block-footer {
 footer .block-footer div figure img{
     width: 80%;
     transition: width 0.5s; 
-}
-
-footer .block-footer div figure img:hover {
-    width: 100%;
 }
 
 footer div.block-footer div {
@@ -375,7 +366,13 @@ footer div.block-footer div {
     }
 
     header .block-info .additional-profile .block-info-contact {
-        padding: 0 0 6% 2%;
+        padding: 0 7% 6% 7%;
+        text-align: left;
+        word-break: break-word;
+    }
+
+    header .block-info .additional-profile .block-info-contact li {
+        margin-bottom: 5%;
     }
 
     main div section.exp-profile ul {
@@ -421,5 +418,16 @@ footer div.block-footer div {
 
     footer .block-footer div figure img {
         width: 80%;
+    }
+}
+
+@media (hover: hover) {
+    ul.block-abilities li:hover {
+        width: 14%;
+        transition: 0.5s;
+    }
+    
+    footer .block-footer div figure img:hover {
+        width: 100%;
     }
 }
