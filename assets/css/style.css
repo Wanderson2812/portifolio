@@ -421,12 +421,12 @@ footer div.block-footer div {
     }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     ul.block-abilities li:hover {
         width: 14%;
         transition: 0.5s;
     }
-    
+
     footer .block-footer div figure img:hover {
         width: 100%;
     }
